@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- ícone na aba do navegador -->
+    <link rel="shortcut icon" href="./images/Icons+Favicons/logotraveller.svg" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+    <!-- Meu Favicon -->
+    <link rel="icon" type="image/x-icon" href="./images/Icons+Favicons/faviconSVGBlue.svg">
+
+    <!-- BS Icon  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+
+
+    <!-- Meu CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Gulliver Traveller</title>
+</head>
+
+<body>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+
+    <!-- menu principal -->
+    <nav class="navbar navbar-expand-lg" style="background-color: #2614D9;">
+        <div class="container-fluid">
+            <a class="navbar-brand"><img src="./images/Icons+Favicons/logotraveller.png" class="img-fluid navbar-logo"
+                    alt="..."></a>
+            <form action="navbar-form navbar-left">
+                <div class="input-group">
+                    <input type="text" placeholder="Procure aqui" class="form-control" name="">
+                    <div class="input-group-btn">
+                        <button type="submit" class="btn btn-danger">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" aria-current="page" href="#">Passagens</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Hospedagens</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-light dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Pacotes
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#hotel1">
+                                    Hospedagem + passeios</a></li>
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#hotel2">Ida e
+                                    volta + Hospedagem</a></li>
+                            <li><a class="dropdown-item" href="#"> Ida e
+                                    Volta</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <button href="" class="btn btn-outline-danger mx-2">Entre/Cadastre-se</button>
+                    </li>
+                    <li class="nav-item">
+                        <button href="" class="btn btn-outline-danger mx-2">Ajuda</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- fim menu principal -->
+
+    <div class="container-fluid">
+        <div class="row my-3 align-items-center">
+            <div class="col-12 col-md-6 col-lg-5 my-2">
+                <div class="card align-middle">
+                    <img src="./images/pattern.jpg" class="card-img opacity-50"
+                        alt="Fundo com diversas imagens que referenciam a viagens.">
+                    <div class="card-img-overlay shadow d-flex align-items-center flex-column justify-content-center">
+                        <h1 class="p-4 mb-0 text-center ">Não viva experiências.</h1>
+                        <h1 class="p-4 text-center ">VIVA SONHOS!</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-7 my-2">
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner rounded">
+                        <div class="carousel-item active">
+                            <img src="./images/bonito.png" class="d-block w-100" alt="Destino turistico Bonito">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Bonito é BONITO DEMAIS!</h5>
+                                <p>Conheça esse lugar unico e de belezas naturais incríveis.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/chapada-diamantina.png" class="d-block w-100"
+                                alt="Destino turistico Chapada Diamantina">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Chapada Diamantina</h5>
+                                <p>Um dos locais mais lindos do mundo.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/resort-aleatorio.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Resorts</h5>
+                                <p>Resorts incríveis para aproveitar as férias.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cards -->
+    <div class="container mb-4">
+        <div class="row d-flex d-flex justify-content-between">
+            <div class="col-12 col-lg-3 p-4 m-2 border rounded">
+                <div class="card border-0">
+                    <img src="./images/card1.jpg" class="card-img-top img-fluid" alt="Holambra">
+                    <div class="card-body">
+                        <h5 class="card-title">Holambra</h5>
+                        <p class="card-text">A “Cidade das Flores” te espera para uma viagem repleta de charme,
+                            cantinhos apaixonantes e atrações turísticas para todas as idades. Confira nosso guia
+                            completo sobre o destino.</p>
+                    </div>
+                    <div>
+                        <div class="justify-content-center d-flex align-text-center align-items-center p-2">
+                            <a href="" class="btn btn-danger mx-2"> Faça sua reserva </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3 p-4 m-2 border rounded">
+                <div class="card border-0">
+                    <img src="./images/card2.jpg" class="card-img-top img-fluid" alt="Arraial do Cabo ">
+                    <div class="card-body">
+                        <h5 class="card-title">Arraial do Cabo</h5>
+                        <p class="card-text">Oferecemos os melhores serviços de hospedagem e passeios turísticos em
+                            Arraial do Cabo/RJ. Criamos experiências personalizadas e inesquecíveis para nossos
+                            clientes.</p>
+                    </div>
+                    <div>
+                        <div class="justify-content-center d-flex align-text-center align-items-center p-2">
+                            <a href="" class="btn btn-danger mx-2"> Faça sua reserva </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3 p-4 m-2 border rounded">
+                <div class="card border-0">
+                    <img src="./images/card3.jpg" class="card-img-top img-fluid" alt="Gramado">
+                    <div class="card-body">
+                        <h5 class="card-title">Gramado</h5>
+                        <p class="card-text">
+                            Conte com a gente para fazer sua reserva e embarcar com a Traveller para conhecer este lugar
+                            cheio de encantos. Temos um roteiro completo para um passeio inesquecível por Gramado.</p>
+                    </div>
+                    <div>
+                        <div class="justify-content-center d-flex align-text-center align-items-center p-2">
+                            <a href="" class="btn btn-danger mx-2"> Faça sua reserva </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Fim Cards-->
+
+    <!-- Modal -->
+    <div class="modal fade" id="hotel1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Pacotes Imperdiveis</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h3 class="display-4">
+
+                        Pacotes incríveis te esperam!</h3>
+                    <p>
+                        Com o controle da pandemia, viagens nacionais e internacionais voltaram a ocorrer, mesmo que
+                        dentro de um “novo normal”. E os turistas poderão conhecer, sentir e experimentar tudo que
+                        um
+                        destino fascinante pode proporcionar a um viajante. A hora de ir é agora e só depende de
+                        você.
+                        Se
+                        abra para o mundo, vá se conectar e se reinventar em vez de criar raízes profundas em um só
+                        lugar. <br>
+                        Essa Terra é grande demais para isso!
+
+                    </p>
+                    <div class="row">
+
+                        <!-- 1o. card -->
+                        <div class="col-sm-12 col-md-6 col-lg-6 my-3">
+                            <div class="card">
+                                <img src="./images/resort-aleatorio.png" class="card-img-top" alt="Ilhas Maldivas">
+                                <a href="#" class="btn btn">-27%</a>
+                                <div class="card-body">
+                                    <h5 class="card-title">Bonito-MS</h5>
+                                    <p class="card-text">
+                                        <ul>
+                                            <li>Quarto</li>
+                                            <li>Café da manhã</li>
+                                            <li>Passeio com Guia Turístico</li>
+                                        </ul>
+                                    </p>
+                                    <a href="./conheca.html" class="btn btn">Imperdível</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- fim 1o. card -->
+
+                        <!-- 2o. card -->
+                        <div class="col-sm-12 col-md-6 col-lg-6 my-3">
+                            <div class="card">
+                                <img src="./images/chapada-diamantina.png" class="card-img-top" alt="Ilhas Maldivas">
+                                <a href="#" class="btn btt">-53%</a>
+                                <div class="card-body">
+                                    <h5 class="card-title">Chapada Diamantina-BA</h5>
+                                    <p class="card-text">
+                                        <ul>
+                                            <li>Quarto</li>
+                                            <li>Café da manhã</li>
+                                            <li>Aluguel de Carro</li>
+                                        </ul>
+                                    </p>
+                                    <a href="#" class="btn btn">Super Desconto</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- fim 2o. card -->
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal fade" id="hotel2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel2">Pacotes Luxo</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h3 class="display-4">
+
+                        Pacotes luxuosos sem pagar muito!</h3>
+                    <p>
+                        Desenhamos roteiros e experiências únicas para os mais incríveis destinos do mundo.
+                        Tahiti, Dubai, Deserto do Atacama, Safáris Luxuosos, Aurora Boreal entre outras
+                        experiências. <br>
+
+                    </p>
+                    <div class="row">
+
+                        <!-- 1o. card -->
+                        <div class="col-sm-12 col-md-6 col-lg-6 my-3">
+                            <div class="card">
+                                <img src="./images/taiti.jpg" class="card-img-top" alt="Tahiti">
+                                <a href="#" class="btn btn">-27%</a>
+                                <div class="card-body">
+                                    <h5 class="card-title">Tahiti</h5>
+                                    <p class="card-text">
+                                        <ul>
+                                            <li>Quarto</li>
+                                            <li>Café da manhã</li>
+                                            <li>Passeio com Guia Turístico</li>
+                                        </ul>
+                                    </p>
+                                    <a href="./conheca.html" class="btn btn">Imperdível</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- fim 1o. card -->
+
+                        <!-- 2o. card -->
+                        <div class="col-sm-12 col-md-6 col-lg-6 my-3">
+                            <div class="card">
+                                <img src="./images/dubai.jpg" class="card-img-top" alt="Dubai">
+                                <a href="#" class="btn btt">-53%</a>
+                                <div class="card-body">
+                                    <h5 class="card-title">Dubai</h5>
+                                    <p class="card-text">
+                                        <ul>
+                                            <li>Quarto</li>
+                                            <li>Café da manhã</li>
+                                            <li>Aluguel de Carro</li>
+                                        </ul>
+                                    </p>
+                                    <a href="#" class="btn btn">Super Desconto</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- fim 2o. card -->
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fim dos Modais -->
+
+    <div class="container-fluid bg-danger py-4 text-center">
+        <h3 style="margin-bottom: 0px;" class="text-light">
+            Desenvolvido por Claudemir Romano - Gustavo Castanho - Leila Ribeiro - Renata Antoniassi
+        </h3>
+    </div>
+
+</body>
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+</script>
+
+</html>
